@@ -1,0 +1,35 @@
+/* Main author styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+header {
+    position: fixed;
+    top: 0;
+}
+
+header li {
+    display: inline;
+}
+
+main {
+    margin-top: 30%; /* an arbitrary percentage: can use pixels or something depending on the PSD/Illustrator file */
+}
+
+main .left-title {
+    float: left;
+}
+
+main .right-title {
+    float: right;
+}
+
+main > div {
+    width: 50%;
+} /* this targets the first child divs in the main. hopefully any other divs made won't be affected */
+
+main .content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main .lede {
+    font-size: 2em;
+}
