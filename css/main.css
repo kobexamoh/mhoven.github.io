@@ -1,5 +1,15 @@
 /* Main author styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+address {
+    font-style: inherit;
+    font-size: 1.4em;
+}
+
+body {
+    color: #013E7F;
+    font-family: 'Playfair Display', serif;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -7,14 +17,21 @@ header {
 
 header li {
     display: inline;
+    font-size: 2.0em;
+    margin-left: 20px;
 }
 
 main {
-    margin-top: 30%; /* an arbitrary percentage: can use pixels or something depending on the PSD/Illustrator file */
+    margin-top: 17%; /* an arbitrary percentage: can use pixels or something depending on the PSD/Illustrator file */
 }
 
 main .left-title {
     float: left;
+}
+
+main .left-title h1 {
+    padding-left: 50px;
+    font-style: italic;
 }
 
 main .right-title {
@@ -26,10 +43,45 @@ main > div {
 } /* this targets the first child divs in the main. hopefully any other divs made won't be affected */
 
 main .content {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
 main .lede {
     font-size: 2em;
+    border-left: 10px solid #013E7F;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+/*.article::before {
+    content: "";
+    border-top: 20px solid black;
+}
+.article::after {
+    content: "";
+    border-bottom: 20px solid black;
+}
+
+work in progress*/
+
+
+.brief {
+    font-style: italic;
+}
+
+.lede-brief {
+    font-size: 1.4em;
+}
+
+.text-border {
+    height: 0px;
+    width: 50%;
+    border: 7px solid #013E7F;
+    margin: 0 auto;
+    margin-bottom: 2.5rem; /* probably redundant to leave it like this: fix in final iteration*/
+}
+
+.title {
+    font-weight: bold;
 }
