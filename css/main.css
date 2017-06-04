@@ -9,6 +9,29 @@ address {
 body {
     color: #013E7F;
     font-family: 'Playfair Display', serif;
+    margin: 0 0 100px 0;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgba(248, 246, 246, 0.9);
+    border-top: 2px solid #e7e7e8;
+    border-bottom: 2px solid #e7e7e8;
+    width: 100%;
+    display: none;
+}
+
+footer li {
+    font-size: 0.85em;
+    display: inline;
+}
+
+footer ul {
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 14px; /* it honestly just looks a little better than the 10px */
 }
 
 header {
@@ -39,6 +62,11 @@ header li a {
 header nav > ul {
     margin: 0;
     padding: 8px; /* credits to The Verge for this fix*/
+}
+
+html {
+    position: relative;
+    min-height: 100%;
 }
 
 main {
@@ -138,4 +166,26 @@ header li a:hover {
 .content p > a:hover,
 .content address > a:hover {
     color: #1EAEDB;
+}
+
+
+/* Main author styles -- MOBILE STYLING
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 671px) {
+
+    /*
+    body {
+        background-color: blue;
+    }
+    */
+
+    /* at breakpoint, hide the header */
+    header {
+        display: none;
+    }
+
+    /* at breakpoint, show the footer */
+    footer {
+        display: initial;
+    }
 }
