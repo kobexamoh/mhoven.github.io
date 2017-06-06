@@ -48,6 +48,10 @@ header ul > div {
     margin-right: 20px;
 }
 
+header > nav > ul > li {
+    padding-left: 30px;
+}
+
 header li {
     display: inline;
     font-size: 1.5em;
@@ -75,15 +79,18 @@ main {
 
 main .left-title {
     float: left;
+    width: 50%;
 }
 
 main .left-title h1 {
     padding-left: 50px;
     font-style: italic;
+    font-size: 6em;
 }
 
 main .right-title {
     float: right;
+    width: 50%;
 }
 
 main .right-title > p {
@@ -123,6 +130,18 @@ main .content .lede {
 work in progress*/
 
 
+.homepage {
+    margin-top: 5%;
+}
+
+/*.homepage > .content {
+    display: none;
+}*/
+
+.homepage > .cancel {
+    width: 100%;
+}
+
 /* Main author styles -- CLASSES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -139,6 +158,10 @@ work in progress*/
 
 .lede-brief {
     font-size: 1.4em;
+}
+
+.mobile-more {
+    display: none;
 }
 
 .text-border {
@@ -171,7 +194,7 @@ header li a:hover {
 
 /* Main author styles -- MOBILE STYLING
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media only screen and (max-width: 671px) {
+@media only screen and (max-width: 701px) {
 
     /*
     body {
@@ -186,6 +209,35 @@ header li a:hover {
 
     /* at breakpoint, show the footer */
     footer {
+        display: initial;
+    }
+}
+
+/* styles for the home screen */
+@media only screen and (max-width: 820px) {
+    main .left-title {
+        width: 100%;
+        border-left: 10px solid #013E7F;
+        padding-left: 20px;
+    }
+
+    main .left-title h1 {
+        padding-left: 0;
+    }
+
+    main .right-title {
+        display: none;
+        width: 100%;
+        border-left: 10px solid #013E7F;
+        padding-left: 20px;
+    }
+
+    .homepage > .content {
+        display: inherit;
+        width: 70%;
+    }
+
+    .mobile-more {
         display: initial;
     }
 }
