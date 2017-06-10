@@ -115,11 +115,12 @@ main .content .lede {
 main .left-side {
     margin-left: 50px;
     float: left;
+    margin-right: 20px;
 }
 
 main .left-side h1 {
     font-style: italic;
-    font-size: 15vh;
+    font-size: 8.5vw; /* scales better horizontally than using "vh" as previous code did */
 }
 
 main .right-side {
