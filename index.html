@@ -5,8 +5,8 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Matt Hoven, PhD - Home</title>
-  <meta name="description" content="Dr. Matthew Hoven is a professor of sport and religion at St. Joseph's College at the University of Alberta.">
+  <title>Matt Hoven, PhD</title>
+  <meta name="description" content="Dr. Matthew Hoven is an associate professor of sport and religion at St. Joseph's College at the University of Alberta.">
   <meta name="author" content="Kobe Amoh">
 
   <!-- Mobile Specific Metas
@@ -15,23 +15,35 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Unna" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+  
 
-      <!--Twitter card information-->
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:title" content="Dr. Matt Hoven" />
-      <meta name="twitter:description" content="Dr. Matthew Hoven is a professor of sport and religion at St. Joseph's College at the University of Alberta." />
-      <meta name="twitter:image" content="http:matthoven.ca/img/twitter-icon.jpg" />
+  <!-- OPEN GRAPH – TWITTER CARD INFO
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Matt Hoven, PhD — St. Joseph's College, University of Alberta" />
+  <meta property="twitter:url" content="http:matthoven.ca">
+  <meta name="twitter:description" content="Dr. Matthew Hoven is an associate professor of sport and religion at St. Joseph's College at the University of Alberta." />
+  <meta name="twitter:image" content="/img/contact.jpg" />
 
-
+  <!-- OPEN GRAPH INFO – FACEBOOK
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http:matthoven.ca">
+  <meta property="og:title" content="Matt Hoven, PhD — St. Joseph's College, University of Alberta">
+  <meta property="og:description" content="Dr. Matthew Hoven is an associate professor of sport and religion at St. Joseph's College at the University of Alberta.">
+  <meta property="og:image" content="/img/contact.jpg">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Font Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://kit.fontawesome.com/f95a6c8d4d.js" crossorigin="anonymous"></script>
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -47,10 +59,14 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="favicons/manifest.json">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png">
   <meta name="theme-color" content="#ffffff">
+
+  <!-- JavaScript (Hamburger Menu)
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script async src="js/main.js"></script>
 
   <!-- Google Analytics Script -->
   <script>
@@ -65,63 +81,73 @@
   </script>
 </head>
 <body>
-    <header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <div>
-              <li><a href="about.html">About</a></li>
-              <li><a href="students.html">Students</a></li>
-              <li><a href="educators.html">Educators</a></li>
-              <li><a href="colleagues.html">Colleagues</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </div>
-        </ul>
-      </nav>
-    </header>
-    <main class="homepage">
-      <div class="content">
 
-        <div class="left-side">
-          <h1>Dr.</h1>
-          <h1>Matthew</h1>
-          <h1>Hoven</h1>
-        </div>
-
-        <div class="right-side">
-          <div class="hidden-title">
-            <h1>Dr.</h1>
-            <h1>Matthew</h1>
-            <h1>Hoven</h1>
-          </div>
-
-          <div class="visible-titles">
-            <h2>Hi, I'm Matt.</h2>
-            <p>
-              A professor who seriously thinks about sport, wonders about religion in the twenty-first century, and likes working with educators.
-            </p>
-            <p>
-              I do sport, religion, and education—admittedly, they’re not the first three things you’d put together. But it’s what I teach and write about.
-            </p>
-
-            <p>
-              I work at <a href="http://www.stjosephs.ualberta.ca/" target="_blank">St. Joseph’s College, University of Alberta</a>, in Edmonton, Canada.
-            </p>
-            <p class="breaking">&nbsp;</p>
-          </div>
-        </div>
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- Mobile Menu Toggles -->
+    <div class="container" id="nav-menu">
+      <div class="row" id="menu-container" style="margin-top: 10%;">
+      <i class="fas fa-bars nav-icon" id="hamburger-open"></i>
       </div>
-    </main>
+  </div>
 
-    <footer>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="students.html">Students</a></li>
-        <li><a href="educators.html">Educators</a></li>
-        <li><a href="colleagues.html">Colleagues</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </footer>
+  <!-- Mobile Menu Items -->
+  <div class="container navigation-block">
+      <div class="row">
+        <!-- TODO: add mobile 'home' logo or icon on all pages -->
+          <nav class="navigation-items">
+              <ul>
+                  <li class="clearfix"><i class="fas fa-times nav-icon" id="hamburger-close"></i></li>
+                  <li><a href="/" id="active-mobile">Home</a></li>
+                  <li><a href="/about.html">About</a></li>
+                  <li><a href="/students.html">For Students</a></li>
+                  <li><a href="/educators.html">For Educators</a></li>
+                  <li><a href="/research-publications.html">Research & Publications</a></li>
+                  <li><a href="/media.html">In The Media</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+
+    <!-- Desktop Menu Navigation Items -->
+    <div class="navigation-desktop">
+      <div class="row">
+          <nav class="twelve columns navigation-desktop-items">
+              <a href="/" id="homepage-link" class="active-desktop">Home</a>
+              <ul>
+                  <li><a href="/about.html">About</a></li>
+                  <li><a href="/students.html">For Students</a></li>
+                  <li><a href="/educators.html">For Educators</a></li>
+                  <li><a href="/research-publications.html">Research & Publications</a></li>
+                  <li><a href="/media.html">In The Media</a></li>
+                  <li><a href="/contact.html">Contact</a></li>
+              </ul>
+          </nav>
+      </div>
+  </div>
+
+  <div class="container main-block">
+    <div class="row">
+      <div class="ten columns" id="homepage-block">
+        <h1 id="standout">Dr. Matt Hoven</h1>
+        <h2 id="subheader">Hi, I'm Matt.</h2>
+        <p>
+          A professor who seriously thinks about sport, wonders about religion in the twenty-first century, and likes working with educators.
+        </p>
+
+        <p>
+          I do sport, religion, and education—admittedly, they’re not the first three things you’d put together. But it’s what I teach and write about.
+        </p>
+
+        <p>
+          I work at <a href="https://www.ualberta.ca/st-josephs/index.html" target="_blank">St. Joseph’s College, University of Alberta</a>, in Edmonton, Canada.
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
