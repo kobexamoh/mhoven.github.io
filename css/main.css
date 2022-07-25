@@ -231,3 +231,11 @@ h4 {
   font-size: 3.5rem;
   font-weight: 500;
 }
+
+.book-promo {
+  background-color: #013e7f12;
+}
+
+.book-promo h2 {
+  font-weight: 500;
+}
