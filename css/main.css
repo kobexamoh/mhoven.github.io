@@ -280,7 +280,7 @@ h4 {
 }
 
 #homepage-block {
-  margin-top: 5%;
+  margin-top: 15%;
 }
 
 .main-photo {
@@ -289,6 +289,18 @@ h4 {
 
 .main-photo img {
   width: 100%;
+}
+
+.main-photo figure {
+  margin: 0;
+}
+
+.main-photo figcaption {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #3e3d3d;
+  padding-top: 0.75rem;
+  text-align: right;
 }
 
 /*# sourceMappingURL=main.css.map */
