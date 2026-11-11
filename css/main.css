@@ -265,6 +265,19 @@ h4 {
   font-style: italic;
 }
 
+.media-brief h4 {
+  font-weight: 600;
+}
+
+.media-brief h4 > .italicize {
+  display: inline-block;
+  max-width: 100%;
+  font-size: 0.8em;
+  font-weight: 400;
+  letter-spacing: normal;
+  color: #53677d;
+}
+
 .course-name {
   font-weight: 500;
   color: #013E7F;
