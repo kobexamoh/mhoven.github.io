@@ -9,9 +9,38 @@
 
 #hamburger-close {
   display: none;
-  position: fixed;
-  top: 25px;
-  right: 25px;
+}
+
+.navigation-items .clearfix {
+  display: flex;
+  justify-content: flex-end;
+}
+button#hamburger-open,
+button#hamburger-close {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+  color: #013E7F;
+  line-height: 1;
+  cursor: pointer;
+}
+
+button#hamburger-open {
+  float: right;
+}
+
+button#hamburger-open .nav-icon,
+button#hamburger-close .nav-icon {
+  float: none;
+}
+
+button#hamburger-open:focus-visible,
+button#hamburger-close:focus-visible {
+  outline: 3px solid #013E7F;
+  outline-offset: 4px;
 }
 
 #nav-menu {
@@ -32,13 +61,24 @@
 
 .navigation-block {
   background-color: white;
-  top: 0;
-  padding-top: 10rem;
-  position: fixed;
-  z-index: 1;
-  height: 100vh;
-  width: 100vw;
+  padding-top: 2rem;
+  position: static;
   display: none;
+}
+
+.navigation-fallback #nav-menu,
+.navigation-fallback #hamburger-close {
+  display: none;
+}
+
+@media (width < 1024px) {
+  .navigation-fallback .navigation-block {
+    display: block;
+    position: static;
+    height: auto;
+    width: auto;
+    padding-top: 2rem;
+  }
 }
 
 #active-mobile,
@@ -129,19 +169,7 @@ body a {
   }
 }
 
-@media (min-width: 425px) {
-  #hamburger-close {
-    top: 35px;
-    right: 35px;
-  }
-}
-
 @media (min-width: 768px) {
-  #hamburger-close {
-    top: 60px;
-    right: 80px;
-  }
-
   p,
   li {
     font-size: 1.7rem;
