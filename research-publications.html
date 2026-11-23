@@ -74,7 +74,7 @@
 
     <!-- JavaScript (Hamburger Menu)
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script async src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
 
     <!-- Google Analytics Script -->
     <script>
@@ -91,20 +91,26 @@
     </script>
 </head>
 
-<body>
+<body class="navigation-fallback">
     <!-- Mobile Menu Toggles -->
     <div class="container" id="nav-menu">
         <div class="row" id="menu-container" style="margin-top: 10%;">
-            <i class="fas fa-bars nav-icon" id="hamburger-open"></i>
+            <button type="button" id="hamburger-open" aria-label="Open navigation" aria-controls="mobile-navigation" aria-expanded="false">
+                <i class="fas fa-bars nav-icon" aria-hidden="true"></i>
+            </button>
         </div>
     </div>
 
     <!-- Mobile Menu Items -->
-    <div class="container navigation-block">
+    <div class="container navigation-block" id="mobile-navigation">
         <div class="row">
             <nav class="navigation-items">
                 <ul>
-                    <li class="clearfix"><i class="fas fa-times nav-icon" id="hamburger-close"></i></li>
+                    <li class="clearfix">
+                        <button type="button" id="hamburger-close" aria-label="Close navigation">
+                            <i class="fas fa-times nav-icon" aria-hidden="true"></i>
+                        </button>
+                    </li>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="students.html">For Students</a></li>
