@@ -72,7 +72,7 @@
 
     <!-- JavaScript (Hamburger Menu)
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script async src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
 
     <!-- Google Analytics Script -->
     <script>
@@ -89,20 +89,26 @@
     </script>
 </head>
 
-<body>
+<body class="navigation-fallback has-site-footer">
     <!-- Mobile Menu Toggles -->
     <div class="container" id="nav-menu">
         <div class="row" id="menu-container" style="margin-top: 10%;">
-            <i class="fas fa-bars nav-icon" id="hamburger-open"></i>
+            <button type="button" id="hamburger-open" aria-label="Open navigation" aria-controls="mobile-navigation" aria-expanded="false">
+                <i class="fas fa-bars nav-icon" aria-hidden="true"></i>
+            </button>
         </div>
     </div>
 
     <!-- Mobile Menu Items -->
-    <div class="container navigation-block">
+    <div class="container navigation-block" id="mobile-navigation">
         <div class="row">
             <nav class="navigation-items">
                 <ul>
-                    <li class="clearfix"><i class="fas fa-times nav-icon" id="hamburger-close"></i></li>
+                    <li class="clearfix">
+                        <button type="button" id="hamburger-close" aria-label="Close navigation">
+                            <i class="fas fa-times nav-icon" aria-hidden="true"></i>
+                        </button>
+                    </li>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="students.html" id="active-mobile">For Students</a></li>
@@ -204,16 +210,10 @@
                             their lives. What can I say, it’s a great course.
                         </li>
                         <li>
-                            <span class="course-name">Teaching Religion: Secondary (CHRTC 381)</span>: If you plan to
-                            teach in religiously-affiliated schools (or in church settings), here’s a fitting course.
-                            Students get an overview of a sociology of religion in Canada, gain practical pedagogical
-                            skills, and beef up their theological knowledge. I’ll bet you make a friend or two along the
-                            way.
+                            <span class="course-name">Teaching Religion: Secondary (CHRTC 381)</span>: If you plan to teach in religiously-affiliated schools (like Catholic schools), here’s a fitting course. Students get an overview of the history and sociology of religion and education, gain practical pedagogical skills, and beef up their theological knowledge. This is a required course to teach in local Catholic secondary schools.
                         </li>
                         <li>
-                            <span class="course-name">Teaching Religion: Elementary (CHRTC 380)</span>: Ditto. This
-                            course is similar to the one above, but focused on teaching and learning with children
-                            instead of adolescents.
+                            <span class="course-name">Teaching Religion: Elementary (CHRTC 380)</span>: Ditto. This course is similar to the one above, but focused on teaching and learning with young children. This is a required course to teach in local Catholic elementary schools.
                         </li>
                         <li>
                             <span class="course-name">Integrated Learning in Catholic Education (CHRTC 410)</span>:
@@ -256,6 +256,16 @@
             </div>
         </div>
     </div>
+    <footer class="container site-footer">
+    <p class="site-footer-name">&copy; 2026 Dr. Matt Hoven</p>
+    <nav aria-label="Footer">
+      <ul class="site-footer-links">
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://www.linkedin.com/in/dr-matt-hoven-33bb1117/">LinkedIn</a></li>
+        <li><a href="https://ualberta.academia.edu/MattHoven">Academia.edu</a></li>
+      </ul>
+    </nav>
+  </footer>
 </body>
 
 </html>
